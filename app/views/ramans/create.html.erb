@@ -1,0 +1,10 @@
+<%= simple_form_for @raman do |f| %>
+                      <%= f.hidden_field :type, value: "Type" %>
+                      <%= f.input :name, label: :Description, placeholder: "Ramen, Tsukemen, Aburasoba"%>
+                      <%= f.hidden_field :start_time, value: DateTime.now %>
+                      <p>Estimated price: <strong>¥<span id="price-field-phone"></span></strong></p>
+
+
+                      <!-- <button type="submit" class="btn btn-primary" method="post">Send Request</button> -->
+
+                    </div>

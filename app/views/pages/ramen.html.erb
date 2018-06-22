@@ -1,1 +1,18 @@
-<h1>ramen</h1>
+
+<!-- div class="container">
+  <div class="row">
+    <% @ramens.each do |ramen| %>
+      <% photo_url = ramen.photo %>
+      <div class="col-xs-12 col-sm-4">
+        <% photo_url = cl_image_path("default.png") if ramen.photo_url.nil? %>
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= photo_url %>);">
+          <div class="card-description">
+            <h2><%= ramen.name %></h2>
+          </div>
+          <%= link_to ramen.name, ramen_path(ramen), class: "card-link"%>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div> -->
+
