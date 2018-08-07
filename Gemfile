@@ -5,7 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
+ruby '2.4.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.5'
 # Use Puma as the app server
@@ -59,5 +59,5 @@ group :production do
   gem 'pg'
 end
 group :development, :test do
-  gem "sqlite3"
+  gem "pg"
 end
